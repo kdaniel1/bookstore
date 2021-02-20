@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model IQueryable<Book>
+<div class="bg-grey">
+    <div class="text-center">
+        <h1 class="display-4 ">Online Bookstore</h1>
+
+    </div>
+    @*this table loads the data from the seed data and the DB into
+      a table that has bootstrap styling*@
+    <div>
+        <h2 class="text-center"> Book List:</h2>
+        <table>
+            <thead class=" bg-primary">
+                <tr class="text-bold">
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Publisher</th>
+                    <th>ISBN</th>
+                    <th>Classification</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var x in Model)
+                {
+                    <tr>
+                        <td>Title: @x.Title</td>
+                        <td>Author: @x.AuthorFirst @x.AuthorMiddle @x.AuthorLast</td>
+                        <td>Publisher: @x.Publisher</td>
+                        <td>ISBN: @x.ISBN </td>
+                        <td>Classification: @x.Classification</td>
+                        <td>Category: @x.Category</td>
+                        <td>Price: @x.Price</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
