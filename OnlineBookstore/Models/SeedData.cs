@@ -30,7 +30,8 @@ namespace OnlineBookstore.Models
                        ISBN = "978-0451419439",
                        Classification = "Fiction",
                        Category = "Classic",
-                       Price = "$9.95"
+                       Price = "$9.95",
+                       Page = 1488
                     },
                     new Book
                     {
@@ -42,7 +43,8 @@ namespace OnlineBookstore.Models
                         ISBN = "978-0743270755",
                         Classification = "Non-Fiction",
                         Category = "Biography",
-                        Price = "$14.58"
+                        Price = "$14.58",
+                        Page = 944
                     },
                     new Book
                     {
@@ -53,7 +55,8 @@ namespace OnlineBookstore.Models
                         ISBN = "978-0553384611",
                         Classification = "Non-Fiction",
                         Category = "Biography",
-                        Price = "$21.54"
+                        Price = "$21.54",
+                        Page = 832
                     },
                     new Book
                     {
@@ -65,7 +68,8 @@ namespace OnlineBookstore.Models
                         ISBN = "978-0812981254",
                         Classification = "Non-Fiction",
                         Category = "Biography",
-                        Price = "$11.61"
+                        Price = "$11.61",
+                        Page = 864
                     },
                     new Book
                     {
@@ -76,7 +80,8 @@ namespace OnlineBookstore.Models
                         ISBN = "978-0812974492",
                         Classification = "Non-Fiction",
                         Category = "Historical",
-                        Price = "$13.33"
+                        Price = "$13.33",
+                        Page = 528
                     },
                     new Book
                     {
@@ -87,7 +92,8 @@ namespace OnlineBookstore.Models
                         ISBN = "978-0804171281",
                         Classification = "Non-Fiction",
                         Category = "Historical Fiction",
-                        Price = "$15.95"
+                        Price = "$15.95",
+                        Page = 288
                     },
                     new Book
                     {
@@ -98,7 +104,8 @@ namespace OnlineBookstore.Models
                         ISBN = "978-1455586691",
                         Classification = "Non-Fiction",
                         Category = "Self-Help",
-                        Price = "$14.99"
+                        Price = "$14.99",
+                        Page = 304
                     },
                     new Book
                     {
@@ -109,7 +116,8 @@ namespace OnlineBookstore.Models
                         ISBN = "978-1455523023",
                         Classification = "Non-Fiction",
                         Category = "Self-Help",
-                        Price = "$21.66"
+                        Price = "$21.66",
+                        Page = 240
                     },
                     new Book
                     {
@@ -120,7 +128,8 @@ namespace OnlineBookstore.Models
                         ISBN = "978-1591847984",
                         Classification = "Non-Fiction",
                         Category = "Business",
-                        Price = "$29.16"
+                        Price = "$29.16",
+                        Page = 400
                     },
                     new Book
                     {
@@ -131,9 +140,50 @@ namespace OnlineBookstore.Models
                         ISBN = "978-0553393613",
                         Classification = "Fiction",
                         Category = "Thrillers",
-                        Price = "$15.03"
+                        Price = "$15.03",
+                        Page = 624
                     }
-                    ); 
+                    ,
+
+                      new Book
+                      {
+                          Title = "Poor Economics",
+                          AuthorFirst = "Abhihit",
+                          AuthorMiddle = "V.",
+                          AuthorLast = "Banerjee",
+                          Publisher = "PublicAffairs",
+                          ISBN = "978-055332345",
+                          Classification = "Non-Fiction",
+                          Category = "Economics",
+                          Price = "$14.99",
+                          Page = 320
+                      },
+                        new Book
+                        {
+                            Title = "Politics is for Power",
+                            AuthorFirst = "Eitan",
+                            AuthorLast = "Hersh",
+                            Publisher = "Schribner",
+                            ISBN = "978-055332345",
+                            Classification = "Non-Fiction",
+                            Category = "Political Science",
+                            Price = "$16.72",
+                            Page = 275
+                        },
+                          new Book
+                          {
+                              Title = "A Stolen Life",
+                              AuthorFirst = "Jacyee",
+                              AuthorLast = "Dugard",
+                              Publisher = "Simon&Schuster Paperbacks",
+                              ISBN = "978-055339572",
+                              Classification = "Non-Fiction",
+                              Category = "True Crime",
+                              Price = "$16.97",
+                              Page = 314
+                          }
+                    );
+
                 context.SaveChanges(); 
 
             }
